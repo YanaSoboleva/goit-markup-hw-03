@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -6,12 +12,44 @@ body {
     background-color: #ffffff;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
 ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
     list-style-type: none;
+}
+
+img {
+    display: block;
 }
 
 a {
     text-decoration: none;
+}
+
+.container {
+    max-width:1188px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navigation {
+    display: flex;
 }
 
 .nav-logo {
@@ -22,6 +60,7 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin: 24px 0px;
 }
 
 .accent-header {
@@ -32,6 +71,12 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #2e2f42;
+    margin: 24px 0px;
+}
+
+.nav-list {
+    display: flex;
+    margin: 24px 76px 24px 332px;
 }
 
 .nav-list .nav-item-link {
@@ -53,6 +98,10 @@ a {
     font-style: normal;
 }
 
+.contacts-list {
+    display: flex;
+}
+
 .contacts-list .contacts-item-link {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
@@ -68,6 +117,8 @@ a {
 
 .section-title {
    background-color: #2E2F42;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .title {
@@ -79,6 +130,9 @@ a {
     color: #fff;
     text-align: center;
     text-transform: capitalize;
+    max-width: 496px;
+    margin: 0 auto;
+    
 }
 
 .title-button {
@@ -90,10 +144,26 @@ a {
     color: #fff;
     background-color: #4d5ae5;
     cursor: pointer;
+    display: block;
+    margin: 0 auto;
+
 }
 .title-button:hover,
 .title-button:focus {
     background-color: #404BBF
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .post-title {
@@ -105,6 +175,10 @@ a {
     color: #2e2f42;
     text-align: center;
     text-transform: capitalize;
+}
+
+.post-title-list {
+    display: flex;
 }
 
 .subtitle {
@@ -132,6 +206,15 @@ a {
     background-color: #FFFFFF;
 }
 
+.team-list {
+    display: flex;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .footer {
     background-color: #2E2F42;
 }
@@ -144,6 +227,7 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin: 100px 1169px 188px 0;
 }
 
 .accent-footer {
@@ -162,4 +246,6 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    max-width: 264px;
+    margin: 16px auto 100px 0;
 }
