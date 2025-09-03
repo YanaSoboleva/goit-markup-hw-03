@@ -46,13 +46,13 @@ a {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 15px;
 }
 
 .nav-conteiner {
     display: flex;
     padding: 24px 0;
 }
-
 
 .navigation {
     display: flex;
